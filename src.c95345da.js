@@ -60,9 +60,9 @@ module.exports={version:"0.25.0"};
 "use strict";var e=require("./utils"),r=require("./helpers/bind"),i=require("./core/Axios"),n=require("./core/mergeConfig"),o=require("./defaults");function u(o){var s=new i(o),t=r(i.prototype.request,s);return e.extend(t,i.prototype,s),e.extend(t,s),t.create=function(e){return u(n(o,e))},t}var s=u(o);s.Axios=i,s.Cancel=require("./cancel/Cancel"),s.CancelToken=require("./cancel/CancelToken"),s.isCancel=require("./cancel/isCancel"),s.VERSION=require("./env/data").version,s.all=function(e){return Promise.all(e)},s.spread=require("./helpers/spread"),s.isAxiosError=require("./helpers/isAxiosError"),module.exports=s,module.exports.default=s;
 },{"./utils":"S1cf","./helpers/bind":"EDTP","./core/Axios":"OvAf","./core/mergeConfig":"OHvn","./defaults":"BXyq","./cancel/Cancel":"mIKj","./cancel/CancelToken":"tsWd","./cancel/isCancel":"V30M","./env/data":"xNqU","./helpers/spread":"X8jb","./helpers/isAxiosError":"wICU"}],"dZBD":[function(require,module,exports) {
 module.exports=require("./lib/axios");
-},{"./lib/axios":"nUiQ"}],"clu1":[function(require,module,exports) {
+},{"./lib/axios":"nUiQ"}],"xL76":[function(require,module,exports) {
 
-},{"./../images/demo.jpg":[["demo.090c7c6d.jpg","nKR3"],"nKR3"]}],"Focm":[function(require,module,exports) {
-"use strict";var e=t(require("axios"));function t(e){return e&&e.__esModule?e:{default:e}}require("./sass/main.scss");const s={ul:document.querySelector(".ul-list"),li:document.querySelector(".class")};function a(){return e.default.get("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5").then(e=>e.data).then(e=>{const t=e.map(({ccy:t,buy:s,sale:a})=>(console.log(e),`<li data-action='${t}' class='class'>${t}: Покупка: ${s} Продажа: ${a}</li>`));s.ul.insertAdjacentHTML("beforeend",t.join(""))})}s.li,a();
-},{"axios":"dZBD","./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/Currency/src.268db7fc.js.map
+},{}],"Focm":[function(require,module,exports) {
+"use strict";var e=t(require("axios"));function t(e){return e&&e.__esModule?e:{default:e}}require("./sass/_example.scss");const s={ul:document.querySelector(".ul-list"),li:document.querySelector(".class")};function a(){return e.default.get("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5").then(e=>e.data).then(e=>{const t=e.map(({ccy:t,buy:s,sale:a})=>(console.log(e),`<li data-action='${t}' class='class'>${t}: Покупка: ${s} Продажа: ${a}</li>`));s.ul.insertAdjacentHTML("beforeend",t.join(""))})}s.li,a();
+},{"axios":"dZBD","./sass/_example.scss":"xL76"}]},{},["Focm"], null)
+//# sourceMappingURL=/Currency/src.c95345da.js.map
