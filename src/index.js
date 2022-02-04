@@ -1,5 +1,5 @@
 import axios from 'axios';
-import './sass/main.scss';
+import './sass/_example.scss';
 
 const refs = {
     ul: document.querySelector('.ul-list'),

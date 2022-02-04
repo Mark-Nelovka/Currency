@@ -1,4 +1,4 @@
-import './sass/main.scss';
+import './sass/_currency.scss';
 import axios from 'axios';
 const refs = {
     form: document.querySelector('.form'),

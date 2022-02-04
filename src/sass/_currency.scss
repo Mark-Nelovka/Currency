@@ -4,13 +4,9 @@ body {
 
 .header {
   background-color: rgb(241, 235, 235);
-  height: 50px;
+  height: 70px;
   padding-top: 20px;
   margin-bottom: 100px;
-}
-
-.accent {
-  color: aqua;
 }
 
 .nav-menu {
@@ -37,6 +33,10 @@ body {
   font-size: 20px;
   text-decoration: inherit;
   color: #000;
+}
+
+.nav-menu__link--accent {
+  color: rgb(92, 192, 192);
 }
 
 // Стиль для кнопок выбора валюты
